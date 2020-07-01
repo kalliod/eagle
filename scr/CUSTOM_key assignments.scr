@@ -11,7 +11,7 @@ ASSIGN     A+Z 'Move'; 		 #
 ASSIGN     A+D 'Delete';     # 		         
 ASSIGN     A+W 'Wire';       # 			         
 ASSIGN     A+G 'Group';      # 			         
-ASSIGN     A+C 'Copy';       # 			         
+ASSIGN     C+C 'Copy';
 ASSIGN     A+Q 'Info';       # 			         
 ASSIGN     A+N 'Name';       # 			         
 ASSIGN     C+V 'Paste';      # 			         
@@ -24,7 +24,7 @@ ASSIGN     A+Z 'Move'; 		 #
 ASSIGN     A+D 'Delete';     # 			         
 ASSIGN     A+W 'Wire';       # 			         
 ASSIGN     A+G 'Group';      # 			         
-ASSIGN     A+C 'Copy';       # 			         
+ASSIGN     C+C 'Copy';
 ASSIGN     A+Q 'Info';       # 			         
 ASSIGN     C+V 'Paste';      # 			         
 ASSIGN     A+F 'Mirror';     # 		         	 
@@ -53,7 +53,7 @@ ASSIGN     A+Z 'Move'; 		 #
 ASSIGN     A+D 'Delete';     # 			         
 ASSIGN     A+W 'Wire';       # 			         
 ASSIGN     A+G 'Group';      # 			         
-ASSIGN     A+C 'Copy';       # 			         
+ASSIGN     C+C 'Copy';
 ASSIGN     A+Q 'Info';       # 			         
 ASSIGN     C+V 'Paste';      # 			         
 ASSIGN     A+F 'Mirror';     # 					 
@@ -73,27 +73,29 @@ ASSIGN     A+D 'Delete';     #
 ASSIGN     C+W 'set Width 0.006; Wire';  #
 ASSIGN     A+W 'Net';        # 			        
 ASSIGN     A+G 'Group';      # 			        
-ASSIGN     A+C 'Copy';       # 			        
+ASSIGN     C+C 'Copy';
 ASSIGN     A+Q 'SET SELECTTYPES ALL; Info';
 ASSIGN     A+N 'Name';       # 			        
 ASSIGN     C+V 'Paste';      # 			        
 ASSIGN     A+S 'Show';       # 			        
 ASSIGN     A+F 'Mirror';     # 		 						
-ASSIGN     A+L 'set size 0.05; Label xref';  #
+ASSIGN     A+L 'set size 0.05; Label xref';
+ASSIGN     A+C 'change class';
 
 BRD:
-ASSIGN     A+M 'Move';       # 	
-ASSIGN     A+D 'Ripup';      #
-ASSIGN     A+W 'Route';      # 			        
+ASSIGN     A+M 'Move';
+ASSIGN     A+D 'Ripup';
+ASSIGN     A+W 'Route';
 ASSIGN     A+G 'SET SELECTTYPES ALL -AIRWIRE; Group';
-ASSIGN     A+C 'Copy';       # 			        
+ASSIGN     C+C 'Copy';
 ASSIGN     A+Q 'SET SELECTTYPES ALL; Info';
-ASSIGN     A+S 'Show';       # 			        
-ASSIGN     A+F 'Mirror';     # 					
-ASSIGN     A+N 'Name';		 #
-ASSIGN     C+V 'Paste';      #
-ASSIGN     C+D 'Delete';     # 			        
-ASSIGN     C+W 'Wire';       #
+ASSIGN     A+S 'Show';
+ASSIGN     A+F 'Mirror';
+ASSIGN     A+N 'Name';
+ASSIGN     C+V 'Paste';
+ASSIGN     C+D 'Delete';
+ASSIGN     C+W 'Wire';
+ASSIGN     C+A+W 'routediff';
 ASSIGN     C+R 'display unrouted; Ratsnest'
 ASSIGN     A+R 'display none unrouted';
 ASSIGN     C+T 'display none dimension vias pads tstop top torigins tplace tnames tdocu Document tkeepout trestrict unrouted';
@@ -114,6 +116,4 @@ ASSIGN     A+5 'GRID mil 100 dots on alt mil 50;'
 ASSIGN     A+6 'GRID mil 50 dots on alt mil 10;'
 ASSIGN     A+7 'GRID mil 10 dots on alt mil 5;'
 ASSIGN     A+8 'GRID mil 1 dots on alt mil finest;'
-ASSIGN     A+T 'Layer 1;'
-ASSIGN     A+B 'Layer 16;'
 ASSIGN     C+F 'run bb_cmd-showzoom.ulp;'

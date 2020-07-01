@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10,6 +10,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -825,6 +839,20 @@
 </polygon>
 <circle x="0" y="0" radius="0.8" width="0" layer="29"/>
 </package>
+<package name="ART_SN_16X24">
+<text x="1.1" y="14.8" size="2" layer="21" font="vector" ratio="12" align="top-left">SN Sticker</text>
+<wire x1="24" y1="16" x2="24" y2="0" width="0.4" layer="21"/>
+<wire x1="24" y1="0" x2="0" y2="0" width="0.4" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="16" width="0.4" layer="21"/>
+<wire x1="0" y1="16" x2="24" y2="16" width="0.4" layer="21"/>
+</package>
+<package name="ART_SN_8X24">
+<text x="1.1" y="7.18" size="2" layer="21" font="vector" ratio="12" align="top-left">SN Sticker</text>
+<wire x1="24" y1="8" x2="24" y2="0" width="0.4" layer="21"/>
+<wire x1="24" y1="0" x2="0" y2="0" width="0.4" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="8" width="0.4" layer="21"/>
+<wire x1="0" y1="8" x2="24" y2="8" width="0.4" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ART_SHEETINFO_1-16">
@@ -1618,6 +1646,40 @@ DIN A3, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="ART_SN_LABEL" prefix="ART">
+<description>Placeholder for serial number sticker</description>
+<gates>
+<gate name="G$1" symbol="ART_NO_SYMBOL_2INCH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-16X24" package="ART_SN_16X24">
+<technologies>
+<technology name="">
+<attribute name="CODE" value="SN Label" constant="no"/>
+<attribute name="DNP" value="T" constant="no"/>
+<attribute name="MANUFACTURER" value="DNP" constant="no"/>
+<attribute name="MFG_PARTNO" value="DNP" constant="no"/>
+<attribute name="PRICE" value="0" constant="no"/>
+<attribute name="SUPPLIER" value="Digi-Key" constant="no"/>
+<attribute name="SUPPLIER_PARTNO" value="DNP" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-08X24" package="ART_SN_8X24">
+<technologies>
+<technology name="">
+<attribute name="CODE" value="SN Label" constant="no"/>
+<attribute name="DNP" value="T" constant="no"/>
+<attribute name="MANUFACTURER" value="DNP" constant="no"/>
+<attribute name="MFG_PARTNO" value="DNP" constant="no"/>
+<attribute name="PRICE" value="0" constant="no"/>
+<attribute name="SUPPLIER" value="Digi-Key" constant="no"/>
+<attribute name="SUPPLIER_PARTNO" value="DNP" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="Custom_Supply_Symbols_KD">
@@ -1712,6 +1774,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="FRAME8" library="Custom_Eagle_KD" deviceset="ART_FRAME_A3" device=""/>
 <part name="FRAME9" library="Custom_Eagle_KD" deviceset="ART_FRAME_A3" device=""/>
 <part name="FRAME10" library="Custom_Eagle_KD" deviceset="ART_FRAME_A3" device=""/>
+<part name="ART2" library="Custom_Eagle_KD" deviceset="ART_SN_LABEL" device="-08X24"/>
 </parts>
 <sheets>
 <sheet>
@@ -1723,14 +1786,14 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="607.06" y1="449.58" x2="607.06" y2="497.84" width="0.1524" layer="97" style="longdash"/>
 <text x="515.62" y="452.12" size="2.54" layer="97">Fiducials</text>
 <wire x1="607.06" y1="444.5" x2="513.08" y2="444.5" width="0.1524" layer="97" style="longdash"/>
-<wire x1="513.08" y1="444.5" x2="513.08" y2="401.32" width="0.1524" layer="97" style="longdash"/>
-<wire x1="513.08" y1="401.32" x2="607.06" y2="401.32" width="0.1524" layer="97" style="longdash"/>
-<wire x1="607.06" y1="401.32" x2="607.06" y2="444.5" width="0.1524" layer="97" style="longdash"/>
-<text x="515.62" y="403.86" size="2.54" layer="97">Artwork</text>
-<wire x1="607.06" y1="396.24" x2="513.08" y2="396.24" width="0.1524" layer="97" style="longdash"/>
-<wire x1="513.08" y1="396.24" x2="513.08" y2="347.98" width="0.1524" layer="97" style="longdash"/>
+<wire x1="513.08" y1="444.5" x2="513.08" y2="383.54" width="0.1524" layer="97" style="longdash"/>
+<wire x1="513.08" y1="383.54" x2="607.06" y2="383.54" width="0.1524" layer="97" style="longdash"/>
+<wire x1="607.06" y1="383.54" x2="607.06" y2="444.5" width="0.1524" layer="97" style="longdash"/>
+<text x="515.62" y="386.08" size="2.54" layer="97">Artwork</text>
+<wire x1="607.06" y1="381" x2="513.08" y2="381" width="0.1524" layer="97" style="longdash"/>
+<wire x1="513.08" y1="381" x2="513.08" y2="347.98" width="0.1524" layer="97" style="longdash"/>
 <wire x1="513.08" y1="347.98" x2="607.06" y2="347.98" width="0.1524" layer="97" style="longdash"/>
-<wire x1="607.06" y1="347.98" x2="607.06" y2="396.24" width="0.1524" layer="97" style="longdash"/>
+<wire x1="607.06" y1="347.98" x2="607.06" y2="381" width="0.1524" layer="97" style="longdash"/>
 <text x="515.62" y="350.52" size="2.54" layer="97">Tester alignment holes</text>
 <wire x1="706.12" y1="497.84" x2="612.14" y2="497.84" width="0.1524" layer="97" style="longdash"/>
 <wire x1="612.14" y1="497.84" x2="612.14" y2="401.32" width="0.1524" layer="97" style="longdash"/>
@@ -1823,21 +1886,21 @@ not fulfill safety and regulatory requirements on it's own.</text>
 <attribute name="CODE" x="579.12" y="466.598" size="1.27" layer="95" rot="R180" align="bottom-center"/>
 <attribute name="NAME" x="579.12" y="473.202" size="1.778" layer="95" align="bottom-center"/>
 </instance>
-<instance part="LOGO2" gate="G$1" x="558.8" y="424.18" smashed="yes">
-<attribute name="CODE" x="558.8" y="424.18" size="1.778" layer="96" align="center"/>
-<attribute name="NAME" x="558.8" y="420.624" size="1.778" layer="95" align="top-center"/>
+<instance part="LOGO2" gate="G$1" x="561.34" y="421.64" smashed="yes">
+<attribute name="CODE" x="561.34" y="421.64" size="1.778" layer="96" align="center"/>
+<attribute name="NAME" x="561.34" y="418.084" size="1.778" layer="95" align="top-center"/>
 </instance>
-<instance part="LOGO3" gate="G$1" x="558.8" y="414.02" smashed="yes">
-<attribute name="CODE" x="558.8" y="414.02" size="1.778" layer="96" align="center"/>
-<attribute name="NAME" x="558.8" y="410.464" size="1.778" layer="95" align="top-center"/>
+<instance part="LOGO3" gate="G$1" x="561.34" y="411.48" smashed="yes">
+<attribute name="CODE" x="561.34" y="411.48" size="1.778" layer="96" align="center"/>
+<attribute name="NAME" x="561.34" y="407.924" size="1.778" layer="95" align="top-center"/>
 </instance>
-<instance part="MTG5" gate="G$1" x="546.1" y="368.3" smashed="yes">
-<attribute name="NAME" x="546.1" y="372.872" size="1.778" layer="95" align="bottom-center"/>
-<attribute name="CODE" x="546.1" y="372.364" size="1.27" layer="96" align="top-center"/>
+<instance part="MTG5" gate="G$1" x="543.56" y="365.76" smashed="yes">
+<attribute name="NAME" x="543.56" y="370.332" size="1.778" layer="95" align="bottom-center"/>
+<attribute name="CODE" x="543.56" y="369.824" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="MTG6" gate="G$1" x="546.1" y="378.46" smashed="yes">
-<attribute name="NAME" x="546.1" y="383.032" size="1.778" layer="95" align="bottom-center"/>
-<attribute name="CODE" x="546.1" y="382.524" size="1.27" layer="96" align="top-center"/>
+<instance part="MTG6" gate="G$1" x="574.04" y="365.76" smashed="yes">
+<attribute name="NAME" x="574.04" y="370.332" size="1.778" layer="95" align="bottom-center"/>
+<attribute name="CODE" x="574.04" y="369.824" size="1.27" layer="96" align="top-center"/>
 </instance>
 <instance part="MTG4" gate="G$1" x="642.62" y="459.74" smashed="yes">
 <attribute name="NAME" x="642.62" y="464.058" size="1.778" layer="95" align="bottom-center"/>
@@ -1869,9 +1932,9 @@ not fulfill safety and regulatory requirements on it's own.</text>
 <attribute name="NAME" x="673.1" y="449.072" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="CODE" x="673.1" y="448.564" size="1.27" layer="96" align="top-center"/>
 </instance>
-<instance part="ART1" gate="G$1" x="558.8" y="434.34" smashed="yes">
-<attribute name="CODE" x="558.8" y="434.34" size="1.778" layer="96" align="center"/>
-<attribute name="NAME" x="558.8" y="430.784" size="1.778" layer="95" align="top-center"/>
+<instance part="ART1" gate="G$1" x="561.34" y="431.8" smashed="yes">
+<attribute name="CODE" x="561.34" y="431.8" size="1.778" layer="96" align="center"/>
+<attribute name="NAME" x="561.34" y="428.244" size="1.778" layer="95" align="top-center"/>
 </instance>
 <instance part="TP1" gate="*" x="165.1" y="1000.76" smashed="yes">
 <attribute name="NAME" x="165.1" y="1002.538" size="1.5" layer="95" align="bottom-center"/>
@@ -1983,6 +2046,10 @@ not fulfill safety and regulatory requirements on it's own.</text>
 <attribute name="REVISION" x="713.74" y="11.43" size="2.54" layer="94" align="center"/>
 <attribute name="OWNER" x="723.9" y="26.67" size="2.54" layer="94" align="center"/>
 <attribute name="PCBA_PN" x="770.89" y="11.43" size="2.54" layer="94" align="center"/>
+</instance>
+<instance part="ART2" gate="G$1" x="561.34" y="401.32" smashed="yes">
+<attribute name="CODE" x="561.34" y="401.32" size="1.778" layer="96" align="center"/>
+<attribute name="NAME" x="561.34" y="397.764" size="1.778" layer="95" align="top-center"/>
 </instance>
 </instances>
 <busses>

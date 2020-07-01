@@ -68,13 +68,13 @@ ASSIGN     A+7 'GRID mil 10 dots on alt mil 5;'
 ASSIGN     A+8 'GRID mil 1 dots on alt mil finest;'
 
 SCH:
-ASSIGN     A+M 'Move';       # 	       
+ASSIGN     A+M 'SET SELECTTYPES ALL -ATTRIBUTE; Move';
 ASSIGN     A+D 'Delete';     # 			        
 ASSIGN     C+W 'set Width 0.006; Wire';  #
 ASSIGN     A+W 'Net';        # 			        
 ASSIGN     A+G 'Group';      # 			        
 ASSIGN     A+C 'Copy';       # 			        
-ASSIGN     A+Q 'Info';       # 			        
+ASSIGN     A+Q 'SET SELECTTYPES ALL; Info';
 ASSIGN     A+N 'Name';       # 			        
 ASSIGN     C+V 'Paste';      # 			        
 ASSIGN     A+S 'Show';       # 			        
@@ -85,9 +85,9 @@ BRD:
 ASSIGN     A+M 'Move';       # 	
 ASSIGN     A+D 'Ripup';      #
 ASSIGN     A+W 'Route';      # 			        
-ASSIGN     A+G 'Group';      # 			        
+ASSIGN     A+G 'SET SELECTTYPES ALL -AIRWIRE; Group';
 ASSIGN     A+C 'Copy';       # 			        
-ASSIGN     A+Q 'Info';       #
+ASSIGN     A+Q 'SET SELECTTYPES ALL; Info';
 ASSIGN     A+S 'Show';       # 			        
 ASSIGN     A+F 'Mirror';     # 					
 ASSIGN     A+N 'Name';		 #

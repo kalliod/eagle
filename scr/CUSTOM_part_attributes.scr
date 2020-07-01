@@ -1,5 +1,5 @@
-# Add standard attributes to parts to make BOM creation easier
-#
+# Add standard attributes to parts
+#  | 
 # Kallio Designs 17.02.2019
 
 ATTRIBUTE MANUFACTURER '';

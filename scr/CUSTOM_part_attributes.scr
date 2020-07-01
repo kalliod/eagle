@@ -1,0 +1,14 @@
+# Add standard attributes to parts to make BOM creation easier
+#
+# Kallio Designs 17.02.2019
+
+ATTRIBUTE MANUFACTURER '';
+ATTRIBUTE MFG_PARTNO '';
+ATTRIBUTE SUPPLIER '';
+ATTRIBUTE SUPPLIER_PARTNO '';
+ATTRIBUTE DNP 'F'; #T=DO NOT PLACE
+ATTRIBUTE CODE '';
+ATTRIBUTE PRICE 'EUR';
+
+
+

@@ -1,0 +1,20 @@
+# Layer settings
+
+SET COLOR_LAYER Top Red;
+SET FILL_LAYER Top Solid;
+SET COLOR_LAYER Bottom Blue;
+SET COLOR_LAYER tPlace LGray;
+SET COLOR_LAYER bPlace LCyan;
+SET COLOR_LAYER tNames LGray;
+SET COLOR_LAYER bNames LCyan;
+SET COLOR_LAYER tValues LGray;
+SET COLOR_LAYER bValues LGray;
+SET COLOR_LAYER tDocu Brown;
+SET COLOR_LAYER bDocu Magenta;
+
+Set Used_Layers 1  16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 \
+                31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 \
+                47 48 49 50 51 52   91 92 93 94 95 96 97 98;
+
+#Set Display_Mode Real; #Pads are displayed as they are plotted, NoDrill would not display the drill hole
+

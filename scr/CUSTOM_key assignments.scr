@@ -1,0 +1,119 @@
+# Key assignment script
+
+# comment character '#'
+# GENERAL:
+ASSIGN C+F 'RUN find.ulp';
+ASSIGN     C+A+F 'WINDOW FIT';
+
+LBR:
+ASSIGN     A+M 'Move';       #   
+ASSIGN     A+Z 'Move'; 		 #         
+ASSIGN     A+D 'Delete';     # 		         
+ASSIGN     A+W 'Wire';       # 			         
+ASSIGN     A+G 'Group';      # 			         
+ASSIGN     A+C 'Copy';       # 			         
+ASSIGN     A+Q 'Info';       # 			         
+ASSIGN     A+N 'Name';       # 			         
+ASSIGN     C+V 'Paste';      # 			         
+ASSIGN     A+F 'Mirror';     # 		         	 
+ASSIGN     C+E 'run cc_edit-used-dev-pac-sym.ulp;';
+
+PAC:
+ASSIGN     A+M 'Move';       # 	
+ASSIGN     A+Z 'Move'; 		 #  		         
+ASSIGN     A+D 'Delete';     # 			         
+ASSIGN     A+W 'Wire';       # 			         
+ASSIGN     A+G 'Group';      # 			         
+ASSIGN     A+C 'Copy';       # 			         
+ASSIGN     A+Q 'Info';       # 			         
+ASSIGN     C+V 'Paste';      # 			         
+ASSIGN     A+F 'Mirror';     # 		         	 
+ASSIGN     A+N 'Name';       # 			         
+ASSIGN	   C+1 'Set wire_bend 1;Set width 0.15';
+ASSIGN	   C+2 'Set wire_bend 1;Set width 0.20';
+ASSIGN	   C+3 'Set wire_bend 1;Set width 0.40';
+ASSIGN	   C+4 'Set wire_bend 1;Set width 0.60';
+ASSIGN	   C+5 'Set wire_bend 1;Set width 0.80';
+ASSIGN	   C+6 'Set wire_bend 1;Set width 1.00';
+ASSIGN     C+A+N 'change lay tname; text  >NAME';
+ASSIGN     C+A+V 'change lay tvalue; text  >CODE';
+ASSIGN     A+1 'GRID mm 1 dots on ALT mm 0.5;'
+ASSIGN     A+2 'GRID mm; GRID ALT mm; GRID 0.5; GRID on; GRID ALT 0.1; GRID dots;'
+ASSIGN     A+3 'GRID mm; GRID ALT mm; GRID 0.1; GRID on; GRID ALT 0.05; GRID dots;'
+ASSIGN     A+4 'GRID mm; GRID ALT mm; GRID 0.01; GRID off; GRID ALT FINEST;'
+ASSIGN     A+5 'GRID mil 100 dots on alt mil 50;'
+ASSIGN     A+6 'GRID mil 50 dots on alt mil 10;'
+ASSIGN     A+7 'GRID mil 10 dots on alt mil 5;'
+ASSIGN     A+8 'GRID mil 1 dots on alt mil finest;'
+ASSIGN     C+A 'display all';
+
+SYM:
+ASSIGN     A+M 'Move';       # 		
+ASSIGN     A+Z 'Move'; 		 #  	         
+ASSIGN     A+D 'Delete';     # 			         
+ASSIGN     A+W 'Wire';       # 			         
+ASSIGN     A+G 'Group';      # 			         
+ASSIGN     A+C 'Copy';       # 			         
+ASSIGN     A+Q 'Info';       # 			         
+ASSIGN     C+V 'Paste';      # 			         
+ASSIGN     A+F 'Mirror';     # 					 
+ASSIGN     A+N 'Name';       #
+ASSIGN     A+1 'GRID mm 1 dots on ALT mm 0.5;'
+ASSIGN     A+2 'GRID mm; GRID ALT mm; GRID 0.5; GRID on; GRID ALT 0.1; GRID dots;'
+ASSIGN     A+3 'GRID mm; GRID ALT mm; GRID 0.1; GRID on; GRID ALT 0.05; GRID dots;'
+ASSIGN     A+4 'GRID mm; GRID ALT mm; GRID 0.01; GRID off; GRID ALT FINEST;'
+ASSIGN     A+5 'GRID mil 100 dots on alt mil 50;'
+ASSIGN     A+6 'GRID mil 50 dots on alt mil 10;'
+ASSIGN     A+7 'GRID mil 10 dots on alt mil 5;'
+ASSIGN     A+8 'GRID mil 1 dots on alt mil finest;'
+
+SCH:
+ASSIGN     A+M 'Move';       # 	       
+ASSIGN     A+D 'Delete';     # 			        
+ASSIGN     C+W 'set Width 0.006; Wire';  #
+ASSIGN     A+W 'Net';        # 			        
+ASSIGN     A+G 'Group';      # 			        
+ASSIGN     A+C 'Copy';       # 			        
+ASSIGN     A+Q 'Info';       # 			        
+ASSIGN     A+N 'Name';       # 			        
+ASSIGN     C+V 'Paste';      # 			        
+ASSIGN     A+S 'Show';       # 			        
+ASSIGN     A+F 'Mirror';     # 		 						
+ASSIGN     A+L 'set size 0.05; Label xref';  #
+
+BRD:
+ASSIGN     A+M 'Move';       # 	
+ASSIGN     A+D 'Ripup';      #
+ASSIGN     A+W 'Route';      # 			        
+ASSIGN     A+G 'Group';      # 			        
+ASSIGN     A+C 'Copy';       # 			        
+ASSIGN     A+Q 'Info';       #
+ASSIGN     A+S 'Show';       # 			        
+ASSIGN     A+F 'Mirror';     # 					
+ASSIGN     A+N 'Name';		 #
+ASSIGN     C+V 'Paste';      #
+ASSIGN     C+D 'Delete';     # 			        
+ASSIGN     C+W 'Wire';       #
+ASSIGN     C+R 'display unrouted; Ratsnest'
+ASSIGN     A+R 'display none unrouted';
+ASSIGN     C+T 'display none dimension vias pads tstop top torigins tplace tnames tdocu Document tkeepout trestrict unrouted';
+ASSIGN     C+B 'display none dimension vias pads bstop bottom borigins bplace bnames bdocu Document bkeepout brestrict unrouted';
+ASSIGN     C+A 'display all -tvalues -bvalues; ratsnest *';
+ASSIGN	   C+1 'Set wire_bend 1;Set width 0.1524; set diameter 0.8; set drill 0.4'
+ASSIGN	   C+2 'Set wire_bend 1;Set width 0.20; set diameter 1.0; set drill 0.5'
+ASSIGN	   C+3 'Set wire_bend 1;Set width 0.40; set diameter 1.2; set drill 0.7'
+ASSIGN	   C+4 'Set wire_bend 1;Set width 0.80; set diameter 1.4; set drill 0.9'
+ASSIGN	   C+5 'Set wire_bend 1;Set width 1.60; set diameter 1.7; set drill 1.2'
+ASSIGN	   C+6 'Set wire_bend 1;Set width 2.00; set diameter 1.7; set drill 1.2'
+ASSIGN	   C+7 'Set wire_bend 1;Set width 3.00; set diameter 1.7; set drill 1.2'
+ASSIGN     A+1 'GRID mm 1 dots on ALT mm 0.5;'
+ASSIGN     A+2 'GRID mm; GRID ALT mm; GRID 0.5; GRID on; GRID ALT 0.1; GRID dots;'
+ASSIGN     A+3 'GRID mm; GRID ALT mm; GRID 0.1; GRID on; GRID ALT 0.05; GRID dots;'
+ASSIGN     A+4 'GRID mm; GRID ALT mm; GRID 0.01; GRID off; GRID ALT FINEST;'
+ASSIGN     A+5 'GRID mil 100 dots on alt mil 50;'
+ASSIGN     A+6 'GRID mil 50 dots on alt mil 10;'
+ASSIGN     A+7 'GRID mil 10 dots on alt mil 5;'
+ASSIGN     A+8 'GRID mil 1 dots on alt mil finest;'
+ASSIGN     A+T 'Layer 1;'
+ASSIGN     A+B 'Layer 16;'
+ASSIGN     C+F 'run bb_cmd-showzoom.ulp;'

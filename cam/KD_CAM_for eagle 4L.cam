@@ -314,7 +314,7 @@
                         "rotate": false,
                         "upside_down": false
                     },
-                    "filename_format": "CAM/%N_%NAME_%FROM_%TO.xln",
+                    "filename_format": "/%N %PREFIX/%N_%NAME_%FROM_%TO.xln",
                     "name": "Drill",
                     "type": "autodrills"
                 }
@@ -347,7 +347,7 @@
             ]
         }
     ],
-    "timestamp": "2020-07-05T23:07:24",
+    "timestamp": "2020-07-05T23:10:21",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "8.6.0"

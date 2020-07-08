@@ -278,9 +278,13 @@
 <text x="134" y="26" size="2.5" layer="20" font="vector" ratio="12" align="top-left">Board outline</text>
 </plain>
 <libraries>
-<library name="Custom_Eagle_KD">
+<library name="Custom_Eagle_KD" urn="urn:adsk.eagle:library:21708656">
 <packages>
-<package name="FIDUCIAL">
+<package name="TEST_POINT_2.5MM" urn="urn:adsk.eagle:footprint:21705775/1" library_version="5">
+<smd name="P$1" x="0" y="0" dx="2.5" dy="2.5" layer="1" roundness="100" cream="no"/>
+<text x="1.5" y="0" size="1" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
+</package>
+<package name="FIDUCIAL" urn="urn:adsk.eagle:footprint:21705795/1" library_version="5">
 <polygon width="0.26" layer="1">
 <vertex x="0" y="0.4" curve="90"/>
 <vertex x="-0.4" y="0" curve="90"/>
@@ -296,7 +300,33 @@
 <circle x="0" y="0" radius="1" width="0.15" layer="41"/>
 <circle x="0" y="0" radius="0.45" width="0.15" layer="31"/>
 </package>
-<package name="ART_LOGO_TEXT_2.5MM_SILK">
+<package name="MTG_NP_M3_320X600_NOSILK" urn="urn:adsk.eagle:footprint:21706026/1" library_version="5">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.6 mm with drill center</description>
+<wire x1="1.8" y1="0" x2="-1.8" y2="0" width="0" layer="49" curve="-180"/>
+<wire x1="1.8" y1="0" x2="-1.8" y2="0" width="0" layer="49" curve="180"/>
+<circle x="0" y="0" radius="2.5" width="1" layer="39"/>
+<circle x="0" y="0" radius="2.5" width="1" layer="40"/>
+<circle x="0" y="0" radius="2.5" width="1" layer="43"/>
+<circle x="0" y="0" radius="2.5" width="1" layer="41"/>
+<circle x="0" y="0" radius="2.5" width="1" layer="42"/>
+<hole x="0" y="0" drill="3.2"/>
+</package>
+<package name="MTG_NP_M2_220X420" urn="urn:adsk.eagle:footprint:21705917/1" library_version="5">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.6 mm with drill center</description>
+<wire x1="1.8" y1="0" x2="-1.8" y2="0" width="0" layer="49" curve="-180"/>
+<wire x1="1.8" y1="0" x2="-1.8" y2="0" width="0" layer="49" curve="180"/>
+<circle x="0" y="0" radius="2.1" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="1.7" width="0.8" layer="39"/>
+<circle x="0" y="0" radius="1.7" width="0.8" layer="40"/>
+<circle x="0" y="0" radius="1.7" width="0.8" layer="43"/>
+<circle x="0" y="0" radius="1.7" width="0.8" layer="41"/>
+<circle x="0" y="0" radius="1.7" width="0.8" layer="42"/>
+<hole x="0" y="0" drill="2.2"/>
+</package>
+<package name="MTG_PTH_M3_320X600" urn="urn:adsk.eagle:footprint:21705765/1" library_version="5">
+<pad name="1" x="0" y="0" drill="3.2" diameter="6"/>
+</package>
+<package name="ART_LOGO_TEXT_2.5MM_SILK" urn="urn:adsk.eagle:footprint:21705928/1" library_version="5">
 <wire x1="10.11576875" y1="-0.707409375" x2="10.100340625" y2="-0.61441875" width="0.2" layer="21"/>
 <wire x1="10.100340625" y1="-0.61441875" x2="10.04955" y2="-0.535159375" width="0.2" layer="21"/>
 <wire x1="10.04955" y1="-0.535159375" x2="9.972709375" y2="-0.48038125" width="0.2" layer="21"/>
@@ -577,7 +607,7 @@
 <wire x1="-7.63686875" y1="-0.76778125" x2="-7.571934375" y2="-1.17260625" width="0.2" layer="21" curve="23.970039"/>
 <wire x1="-8.327309375" y1="0.68311875" x2="-9.06341875" y2="0.147403125" width="0.2" layer="21" curve="83.106391"/>
 </package>
-<package name="ART_LOGO_TEXT_2.5MM_MASK">
+<package name="ART_LOGO_TEXT_2.5MM_MASK" urn="urn:adsk.eagle:footprint:21705929/1" library_version="5">
 <wire x1="10.11576875" y1="-0.707409375" x2="10.100340625" y2="-0.61441875" width="0.2" layer="29"/>
 <wire x1="10.100340625" y1="-0.61441875" x2="10.04955" y2="-0.535159375" width="0.2" layer="29"/>
 <wire x1="10.04955" y1="-0.535159375" x2="9.972709375" y2="-0.48038125" width="0.2" layer="29"/>
@@ -858,60 +888,82 @@
 <wire x1="-7.63686875" y1="-0.76778125" x2="-7.571934375" y2="-1.17260625" width="0.2" layer="29" curve="23.970039"/>
 <wire x1="-8.327309375" y1="0.68311875" x2="-9.06341875" y2="0.147403125" width="0.2" layer="29" curve="83.106391"/>
 </package>
-<package name="MTG_PTH_M3_320X600">
-<pad name="1" x="0" y="0" drill="3.2" diameter="6"/>
-</package>
-<package name="MTG_NP_M3_320X600">
-<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.6 mm with drill center</description>
-<wire x1="1.8" y1="0" x2="-1.8" y2="0" width="0" layer="49" curve="-180"/>
-<wire x1="1.8" y1="0" x2="-1.8" y2="0" width="0" layer="49" curve="180"/>
-<circle x="0" y="0" radius="2.9" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="2.5" width="1" layer="39"/>
-<circle x="0" y="0" radius="2.5" width="1" layer="40"/>
-<circle x="0" y="0" radius="2.5" width="1" layer="43"/>
-<circle x="0" y="0" radius="2.5" width="1" layer="41"/>
-<circle x="0" y="0" radius="2.5" width="1" layer="42"/>
-<circle x="0" y="0" radius="1.9" width="0.2032" layer="21"/>
-<hole x="0" y="0" drill="3.2"/>
-</package>
-<package name="PAD_GND_HOOK_M">
-<pad name="P$1" x="-5" y="0" drill="1.2" diameter="1.8" shape="octagon"/>
-<pad name="P$2" x="5" y="0" drill="1.2" diameter="1.8" shape="octagon"/>
-<wire x1="-3.4" y1="0.45" x2="3.4" y2="0.45" width="0.15" layer="21"/>
-<wire x1="3.4" y1="-0.45" x2="-3.4" y2="-0.45" width="0.15" layer="21"/>
-<text x="0" y="0" size="0.5" layer="21" font="vector" ratio="12" align="center">GND</text>
-</package>
-<package name="MTG_NP_M2_220X420">
-<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.6 mm with drill center</description>
-<wire x1="1.8" y1="0" x2="-1.8" y2="0" width="0" layer="49" curve="-180"/>
-<wire x1="1.8" y1="0" x2="-1.8" y2="0" width="0" layer="49" curve="180"/>
-<circle x="0" y="0" radius="2.1" width="0.2" layer="21"/>
-<circle x="0" y="0" radius="1.7" width="0.8" layer="39"/>
-<circle x="0" y="0" radius="1.7" width="0.8" layer="40"/>
-<circle x="0" y="0" radius="1.7" width="0.8" layer="43"/>
-<circle x="0" y="0" radius="1.7" width="0.8" layer="41"/>
-<circle x="0" y="0" radius="1.7" width="0.8" layer="42"/>
-<hole x="0" y="0" drill="2.2"/>
-</package>
-<package name="ART_QC_BIG">
+<package name="ART_QC_BIG" urn="urn:adsk.eagle:footprint:21705966/1" library_version="5">
 <text x="-0.5" y="0" size="2" layer="21" font="vector" ratio="12" align="center">QC</text>
 <circle x="-0.5" y="0" radius="5" width="0.4" layer="21"/>
-<rectangle x1="-2.4" y1="-1" x2="0.9" y2="1" layer="43"/>
 <circle x="-0.5" y="0" radius="5" width="0.25" layer="43"/>
 <circle x="-0.5" y="0" radius="5" width="0" layer="39"/>
+<rectangle x1="-2.4" y1="-1" x2="0.9" y2="1" layer="43"/>
 </package>
-<package name="TEST_POINT_2.5MM">
-<smd name="P$1" x="0" y="0" dx="2.5" dy="2.5" layer="1" roundness="100" cream="no"/>
-<text x="1.5" y="0" size="1" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
-</package>
-<package name="ART_SN_8X24">
+<package name="ART_SN_8X24" urn="urn:adsk.eagle:footprint:21706057/1" library_version="5">
 <text x="1.1" y="7.18" size="2" layer="21" font="vector" ratio="12" align="top-left">SN Sticker</text>
 <wire x1="24" y1="8" x2="24" y2="0" width="0.4" layer="21"/>
 <wire x1="24" y1="0" x2="0" y2="0" width="0.4" layer="21"/>
 <wire x1="0" y1="0" x2="0" y2="8" width="0.4" layer="21"/>
 <wire x1="0" y1="8" x2="24" y2="8" width="0.4" layer="21"/>
 </package>
+<package name="PAD_GND_HOOK_M" urn="urn:adsk.eagle:footprint:21705773/1" library_version="5">
+<pad name="P$1" x="-5" y="0" drill="1.2" diameter="1.8" shape="octagon"/>
+<pad name="P$2" x="5" y="0" drill="1.2" diameter="1.8" shape="octagon"/>
+<wire x1="-3.4" y1="0.45" x2="3.4" y2="0.45" width="0.15" layer="21"/>
+<wire x1="3.4" y1="-0.45" x2="-3.4" y2="-0.45" width="0.15" layer="21"/>
+<text x="0" y="0" size="0.5" layer="21" font="vector" ratio="12" align="center">GND</text>
+</package>
 </packages>
+<packages3d>
+<package3d name="TEST_POINT_2.5MM" urn="urn:adsk.eagle:package:21706159/2" type="empty" library_version="5">
+<packageinstances>
+<packageinstance name="TEST_POINT_2.5MM"/>
+</packageinstances>
+</package3d>
+<package3d name="FIDUCIAL" urn="urn:adsk.eagle:package:21706180/1" type="empty" library_version="5">
+<packageinstances>
+<packageinstance name="FIDUCIAL"/>
+</packageinstances>
+</package3d>
+<package3d name="MTG_NP_M3_320X600_NOSILK" urn="urn:adsk.eagle:package:21706410/1" type="empty" library_version="5">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.6 mm with drill center</description>
+<packageinstances>
+<packageinstance name="MTG_NP_M3_320X600_NOSILK"/>
+</packageinstances>
+</package3d>
+<package3d name="MTG_NP_M2_220X420" urn="urn:adsk.eagle:package:21706303/1" type="empty" library_version="5">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.6 mm with drill center</description>
+<packageinstances>
+<packageinstance name="MTG_NP_M2_220X420"/>
+</packageinstances>
+</package3d>
+<package3d name="MTG_PTH_M3_320X600" urn="urn:adsk.eagle:package:21706149/2" type="empty" library_version="5">
+<packageinstances>
+<packageinstance name="MTG_PTH_M3_320X600"/>
+</packageinstances>
+</package3d>
+<package3d name="ART_LOGO_TEXT_2.5MM_SILK" urn="urn:adsk.eagle:package:21706313/1" type="empty" library_version="5">
+<packageinstances>
+<packageinstance name="ART_LOGO_TEXT_2.5MM_SILK"/>
+</packageinstances>
+</package3d>
+<package3d name="ART_LOGO_TEXT_2.5MM_MASK" urn="urn:adsk.eagle:package:21706314/1" type="empty" library_version="5">
+<packageinstances>
+<packageinstance name="ART_LOGO_TEXT_2.5MM_MASK"/>
+</packageinstances>
+</package3d>
+<package3d name="ART_QC_BIG" urn="urn:adsk.eagle:package:21706350/1" type="empty" library_version="5">
+<packageinstances>
+<packageinstance name="ART_QC_BIG"/>
+</packageinstances>
+</package3d>
+<package3d name="ART_SN_8X24" urn="urn:adsk.eagle:package:21706442/1" type="empty" library_version="5">
+<packageinstances>
+<packageinstance name="ART_SN_8X24"/>
+</packageinstances>
+</package3d>
+<package3d name="PAD_GND_HOOK_M" urn="urn:adsk.eagle:package:21706157/2" type="empty" library_version="5">
+<packageinstances>
+<packageinstance name="PAD_GND_HOOK_M"/>
+</packageinstances>
+</package3d>
+</packages3d>
 </library>
 </libraries>
 <attributes>
@@ -1118,7 +1170,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="FIDUCIAL1" library="Custom_Eagle_KD" package="FIDUCIAL" value="FIDUCIAL" x="-13.97" y="27.94" smashed="yes">
+<element name="FIDUCIAL1" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="FIDUCIAL" package3d_urn="urn:adsk.eagle:package:21706180/1" value="FIDUCIAL" x="-13.97" y="27.94" smashed="yes">
 <attribute name="CODE" value="FIDUCIAL" x="-13.97" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="DNP" value="T" x="-13.97" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-13.97" y="27.94" size="1.778" layer="27" display="off"/>
@@ -1126,7 +1178,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-13.97" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-13.97" y="27.94" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FIDUCIAL2" library="Custom_Eagle_KD" package="FIDUCIAL" value="FIDUCIAL" x="-16.51" y="27.94" smashed="yes">
+<element name="FIDUCIAL2" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="FIDUCIAL" package3d_urn="urn:adsk.eagle:package:21706180/1" value="FIDUCIAL" x="-16.51" y="27.94" smashed="yes">
 <attribute name="CODE" value="FIDUCIAL" x="-16.51" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="DNP" value="T" x="-16.51" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-16.51" y="27.94" size="1.778" layer="27" display="off"/>
@@ -1134,7 +1186,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-16.51" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-16.51" y="27.94" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FIDUCIAL3" library="Custom_Eagle_KD" package="FIDUCIAL" value="FIDUCIAL" x="-19.05" y="27.94" smashed="yes">
+<element name="FIDUCIAL3" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="FIDUCIAL" package3d_urn="urn:adsk.eagle:package:21706180/1" value="FIDUCIAL" x="-19.05" y="27.94" smashed="yes">
 <attribute name="CODE" value="FIDUCIAL" x="-19.05" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="DNP" value="T" x="-19.05" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-19.05" y="27.94" size="1.778" layer="27" display="off"/>
@@ -1142,7 +1194,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-19.05" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-19.05" y="27.94" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FIDUCIAL4" library="Custom_Eagle_KD" package="FIDUCIAL" value="FIDUCIAL" x="-21.59" y="27.94" smashed="yes">
+<element name="FIDUCIAL4" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="FIDUCIAL" package3d_urn="urn:adsk.eagle:package:21706180/1" value="FIDUCIAL" x="-21.59" y="27.94" smashed="yes">
 <attribute name="CODE" value="FIDUCIAL" x="-21.59" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="DNP" value="T" x="-21.59" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-21.59" y="27.94" size="1.778" layer="27" display="off"/>
@@ -1150,7 +1202,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-21.59" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-21.59" y="27.94" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FIDUCIAL5" library="Custom_Eagle_KD" package="FIDUCIAL" value="FIDUCIAL" x="-24.13" y="27.94" smashed="yes">
+<element name="FIDUCIAL5" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="FIDUCIAL" package3d_urn="urn:adsk.eagle:package:21706180/1" value="FIDUCIAL" x="-24.13" y="27.94" smashed="yes">
 <attribute name="CODE" value="FIDUCIAL" x="-24.13" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="DNP" value="T" x="-24.13" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-24.13" y="27.94" size="1.778" layer="27" display="off"/>
@@ -1158,7 +1210,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-24.13" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-24.13" y="27.94" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FIDUCIAL6" library="Custom_Eagle_KD" package="FIDUCIAL" value="FIDUCIAL" x="-26.67" y="27.94" smashed="yes">
+<element name="FIDUCIAL6" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="FIDUCIAL" package3d_urn="urn:adsk.eagle:package:21706180/1" value="FIDUCIAL" x="-26.67" y="27.94" smashed="yes">
 <attribute name="CODE" value="FIDUCIAL" x="-26.67" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="DNP" value="T" x="-26.67" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-26.67" y="27.94" size="1.778" layer="27" display="off"/>
@@ -1166,7 +1218,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-26.67" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-26.67" y="27.94" size="1.778" layer="27" display="off"/>
 </element>
-<element name="LOGO2" library="Custom_Eagle_KD" package="ART_LOGO_TEXT_2.5MM_SILK" value="ART_LOGO_TEXT_2.5MM-SILK" x="-24.13" y="20.32" smashed="yes">
+<element name="LOGO2" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="ART_LOGO_TEXT_2.5MM_SILK" package3d_urn="urn:adsk.eagle:package:21706313/1" value="ART_LOGO_TEXT_2.5MM-SILK" x="-24.13" y="20.32" smashed="yes">
 <attribute name="CODE" value="Logo text 2.5mm silk" x="-24.13" y="20.32" size="1.778" layer="27" display="off"/>
 <attribute name="DNP" value="T" x="-24.13" y="20.32" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-24.13" y="20.32" size="1.778" layer="27" display="off"/>
@@ -1175,7 +1227,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-24.13" y="20.32" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-24.13" y="20.32" size="1.778" layer="27" display="off"/>
 </element>
-<element name="LOGO3" library="Custom_Eagle_KD" package="ART_LOGO_TEXT_2.5MM_MASK" value="ART_LOGO_TEXT_2.5MM-MASK" x="-24.13" y="24.13" smashed="yes">
+<element name="LOGO3" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="ART_LOGO_TEXT_2.5MM_MASK" package3d_urn="urn:adsk.eagle:package:21706314/1" value="ART_LOGO_TEXT_2.5MM-MASK" x="-24.13" y="24.13" smashed="yes">
 <attribute name="CODE" value="Logo text 2.5 mm mask" x="-24.13" y="24.13" size="1.778" layer="27" display="off"/>
 <attribute name="DNP" value="T" x="-24.13" y="24.13" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-24.13" y="24.13" size="1.778" layer="27" display="off"/>
@@ -1184,7 +1236,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-24.13" y="24.13" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-24.13" y="24.13" size="1.778" layer="27" display="off"/>
 </element>
-<element name="MTG4" library="Custom_Eagle_KD" package="MTG_PTH_M3_320X600" value="HOL_3.2/6.0_PTH-3.2/6.0_PTH" x="-16.51" y="3.81" smashed="yes">
+<element name="MTG4" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="MTG_PTH_M3_320X600" package3d_urn="urn:adsk.eagle:package:21706149/2" value="HOL_3.2/6.0_PTH-3.2/6.0_PTH" x="-16.51" y="3.81" smashed="yes">
 <attribute name="CODE" value="3.2/6.0mm" x="-16.51" y="3.81" size="1.778" layer="27" display="off"/>
 <attribute name="DNP" value="T" x="-16.51" y="3.81" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-16.51" y="3.81" size="1.778" layer="27" display="off"/>
@@ -1192,7 +1244,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-16.51" y="3.81" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-16.51" y="3.81" size="1.778" layer="27" display="off"/>
 </element>
-<element name="MTG5" library="Custom_Eagle_KD" package="MTG_NP_M3_320X600" value="HOL_3.2/6.0_NP" x="-22.86" y="3.81" smashed="yes">
+<element name="MTG5" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="MTG_NP_M3_320X600_NOSILK" package3d_urn="urn:adsk.eagle:package:21706410/1" value="HOL_3.2/6.0_NP-NOSILK" x="-22.86" y="3.81" smashed="yes">
 <attribute name="CODE" value="NP 3.2 mm" x="-22.86" y="3.81" size="1.778" layer="27" display="off"/>
 <attribute name="DNP" value="T" x="-22.86" y="3.81" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-22.86" y="3.81" size="1.778" layer="27" display="off"/>
@@ -1201,7 +1253,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-22.86" y="3.81" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-22.86" y="3.81" size="1.778" layer="27" display="off"/>
 </element>
-<element name="MTG6" library="Custom_Eagle_KD" package="MTG_NP_M3_320X600" value="HOL_3.2/6.0_NP" x="-29.21" y="3.81" smashed="yes">
+<element name="MTG6" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="MTG_NP_M3_320X600_NOSILK" package3d_urn="urn:adsk.eagle:package:21706410/1" value="HOL_3.2/6.0_NP-NOSILK" x="-29.21" y="3.81" smashed="yes">
 <attribute name="CODE" value="NP 3.2 mm" x="-29.21" y="3.81" size="1.778" layer="27" display="off"/>
 <attribute name="DNP" value="T" x="-29.21" y="3.81" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-29.21" y="3.81" size="1.778" layer="27" display="off"/>
@@ -1210,7 +1262,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-29.21" y="3.81" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-29.21" y="3.81" size="1.778" layer="27" display="off"/>
 </element>
-<element name="X1" library="Custom_Eagle_KD" package="PAD_GND_HOOK_M" value="PAD_TEST_GROUND_HOOK" x="-29" y="-2" smashed="yes">
+<element name="X1" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="PAD_GND_HOOK_M" package3d_urn="urn:adsk.eagle:package:21706157/2" value="PAD_TEST_GROUND_HOOK" x="-29" y="-2" smashed="yes">
 <attribute name="CODE" value="DNP" x="-29" y="-2" size="1" layer="27" ratio="12" display="off"/>
 <attribute name="DNP" value="T" x="-29" y="-2" size="1" layer="27" ratio="12" display="off"/>
 <attribute name="MANUFACTURER" value="Do not populate" x="-29" y="-2" size="1" layer="27" ratio="12" display="off"/>
@@ -1219,7 +1271,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-29" y="-2" size="1" layer="27" ratio="12" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-29" y="-2" size="1" layer="27" ratio="12" display="off"/>
 </element>
-<element name="MTG1" library="Custom_Eagle_KD" package="MTG_NP_M2_220X420" value="HOL_2.2/4.2_NP" x="-33" y="-6" smashed="yes">
+<element name="MTG1" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="MTG_NP_M2_220X420" package3d_urn="urn:adsk.eagle:package:21706303/1" value="HOL_2.2/4.2_NP" x="-33" y="-6" smashed="yes">
 <attribute name="CODE" value="NP 2.2 mm" x="-33" y="-6" size="1" layer="27" ratio="12" display="off"/>
 <attribute name="DNP" value="T" x="-33" y="-6" size="1" layer="27" ratio="12" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-33" y="-6" size="1" layer="27" ratio="12" display="off"/>
@@ -1228,7 +1280,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-33" y="-6" size="1" layer="27" ratio="12" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-33" y="-6" size="1" layer="27" ratio="12" display="off"/>
 </element>
-<element name="MTG2" library="Custom_Eagle_KD" package="MTG_NP_M2_220X420" value="HOL_2.2/4.2_NP" x="-33" y="-11" smashed="yes">
+<element name="MTG2" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="MTG_NP_M2_220X420" package3d_urn="urn:adsk.eagle:package:21706303/1" value="HOL_2.2/4.2_NP" x="-33" y="-11" smashed="yes">
 <attribute name="CODE" value="NP 2.2 mm" x="-33" y="-11" size="1" layer="27" ratio="12" display="off"/>
 <attribute name="DNP" value="T" x="-33" y="-11" size="1" layer="27" ratio="12" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-33" y="-11" size="1" layer="27" ratio="12" display="off"/>
@@ -1237,7 +1289,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-33" y="-11" size="1" layer="27" ratio="12" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-33" y="-11" size="1" layer="27" ratio="12" display="off"/>
 </element>
-<element name="MTG3" library="Custom_Eagle_KD" package="MTG_NP_M2_220X420" value="HOL_2.2/4.2_NP" x="-33" y="-16" smashed="yes">
+<element name="MTG3" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="MTG_NP_M2_220X420" package3d_urn="urn:adsk.eagle:package:21706303/1" value="HOL_2.2/4.2_NP" x="-33" y="-16" smashed="yes">
 <attribute name="CODE" value="NP 2.2 mm" x="-33" y="-16" size="1" layer="27" ratio="12" display="off"/>
 <attribute name="DNP" value="T" x="-33" y="-16" size="1" layer="27" ratio="12" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-33" y="-16" size="1" layer="27" ratio="12" display="off"/>
@@ -1246,7 +1298,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-33" y="-16" size="1" layer="27" ratio="12" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-33" y="-16" size="1" layer="27" ratio="12" display="off"/>
 </element>
-<element name="MTG7" library="Custom_Eagle_KD" package="MTG_NP_M2_220X420" value="HOL_2.2/4.2_NP" x="-33" y="-21" smashed="yes">
+<element name="MTG7" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="MTG_NP_M2_220X420" package3d_urn="urn:adsk.eagle:package:21706303/1" value="HOL_2.2/4.2_NP" x="-33" y="-21" smashed="yes">
 <attribute name="CODE" value="NP 2.2 mm" x="-33" y="-21" size="1" layer="27" ratio="12" display="off"/>
 <attribute name="DNP" value="T" x="-33" y="-21" size="1" layer="27" ratio="12" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-33" y="-21" size="1" layer="27" ratio="12" display="off"/>
@@ -1255,7 +1307,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-33" y="-21" size="1" layer="27" ratio="12" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-33" y="-21" size="1" layer="27" ratio="12" display="off"/>
 </element>
-<element name="ART1" library="Custom_Eagle_KD" package="ART_QC_BIG" value="ART_QC" x="-32" y="-29" smashed="yes">
+<element name="ART1" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="ART_QC_BIG" package3d_urn="urn:adsk.eagle:package:21706350/1" value="ART_QC" x="-32" y="-29" smashed="yes">
 <attribute name="CODE" value="QC sticker" x="-32" y="-29" size="1" layer="27" font="vector" ratio="12" display="off"/>
 <attribute name="DNP" value="T" x="-32" y="-29" size="1" layer="27" font="vector" ratio="12" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-32" y="-29" size="1" layer="27" font="vector" ratio="12" display="off"/>
@@ -1264,7 +1316,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="Digi-Key" x="-32" y="-29" size="1" layer="27" font="vector" ratio="12" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-32" y="-29" size="1" layer="27" font="vector" ratio="12" display="off"/>
 </element>
-<element name="TP1" library="Custom_Eagle_KD" package="TEST_POINT_2.5MM" value="PAD_TEST_POINT-2.5MM" x="-37" y="-36" smashed="yes">
+<element name="TP1" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="TEST_POINT_2.5MM" package3d_urn="urn:adsk.eagle:package:21706159/2" value="PAD_TEST_POINT-2.5MM" x="-37" y="-36" smashed="yes">
 <attribute name="CODE" value="DNP" x="-37" y="-36" size="1" layer="27" font="vector" ratio="12" display="off"/>
 <attribute name="DNP" value="T" x="-37" y="-36" size="1" layer="27" font="vector" ratio="12" display="off"/>
 <attribute name="INFO" value="Edit &quot;INFO&quot; attribute" x="-37" y="-36" size="1" layer="27" font="vector" ratio="12" display="off"/>
@@ -1274,7 +1326,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-37" y="-36" size="1" layer="27" font="vector" ratio="12" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-37" y="-36" size="1" layer="27" font="vector" ratio="12" display="off"/>
 </element>
-<element name="TP2" library="Custom_Eagle_KD" package="TEST_POINT_2.5MM" value="PAD_TEST_POINT-2.5MM" x="-37" y="-39" smashed="yes">
+<element name="TP2" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="TEST_POINT_2.5MM" package3d_urn="urn:adsk.eagle:package:21706159/2" value="PAD_TEST_POINT-2.5MM" x="-37" y="-39" smashed="yes">
 <attribute name="CODE" value="DNP" x="-37" y="-39" size="1" layer="27" font="vector" ratio="12" display="off"/>
 <attribute name="DNP" value="T" x="-37" y="-39" size="1" layer="27" font="vector" ratio="12" display="off"/>
 <attribute name="INFO" value="Edit &quot;INFO&quot; attribute" x="-37" y="-39" size="1" layer="27" font="vector" ratio="12" display="off"/>
@@ -1284,7 +1336,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-37" y="-39" size="1" layer="27" font="vector" ratio="12" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-37" y="-39" size="1" layer="27" font="vector" ratio="12" display="off"/>
 </element>
-<element name="TP3" library="Custom_Eagle_KD" package="TEST_POINT_2.5MM" value="PAD_TEST_POINT-2.5MM" x="-37" y="-42" smashed="yes">
+<element name="TP3" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="TEST_POINT_2.5MM" package3d_urn="urn:adsk.eagle:package:21706159/2" value="PAD_TEST_POINT-2.5MM" x="-37" y="-42" smashed="yes">
 <attribute name="CODE" value="DNP" x="-37" y="-42" size="1" layer="27" font="vector" ratio="12" display="off"/>
 <attribute name="DNP" value="T" x="-37" y="-42" size="1" layer="27" font="vector" ratio="12" display="off"/>
 <attribute name="INFO" value="Edit &quot;INFO&quot; attribute" x="-37" y="-42" size="1" layer="27" font="vector" ratio="12" display="off"/>
@@ -1294,7 +1346,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="DNP" x="-37" y="-42" size="1" layer="27" font="vector" ratio="12" display="off"/>
 <attribute name="SUPPLIER_PARTNO" value="DNP" x="-37" y="-42" size="1" layer="27" font="vector" ratio="12" display="off"/>
 </element>
-<element name="ART2" library="Custom_Eagle_KD" package="ART_SN_8X24" value="ART_SN_LABEL-08X24" x="-38" y="-52" smashed="yes">
+<element name="ART2" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" package="ART_SN_8X24" package3d_urn="urn:adsk.eagle:package:21706442/1" value="ART_SN_LABEL-08X24" x="-38" y="-52" smashed="yes">
 <attribute name="CODE" value="SN Label" x="-38" y="-52" size="1" layer="27" font="vector" ratio="12" display="off"/>
 <attribute name="DNP" value="T" x="-38" y="-52" size="1" layer="27" font="vector" ratio="12" display="off"/>
 <attribute name="MANUFACTURER" value="DNP" x="-38" y="-52" size="1" layer="27" font="vector" ratio="12" display="off"/>
@@ -1322,4 +1374,21 @@ design rules under a new name.</description>
 </mfgpreviewcolors>
 </board>
 </drawing>
+<compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>

@@ -27,15 +27,15 @@
                     },
                     "board_outline": true,
                     "config": {
-                        "description": "Mechanical",
-                        "file_function": "Other"
+                        "file_function": "Profile",
+                        "plating": "non-plated"
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME_outline.GML",
                     "layers": [
                         20
                     ],
                     "milling": true,
-                    "name": "Mechanical",
+                    "name": "Board outline",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -49,8 +49,8 @@
                     },
                     "board_outline": false,
                     "config": {
-                        "description": "Bottom Paste",
-                        "file_function": "Other"
+                        "file_function": "Paste",
+                        "layer_type": "Bottom"
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME.GBP",
                     "layers": [
@@ -71,8 +71,8 @@
                     },
                     "board_outline": false,
                     "config": {
-                        "description": "Top Paste",
-                        "file_function": "Other"
+                        "file_function": "Paste",
+                        "layer_type": "top"
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME.GTP",
                     "layers": [
@@ -93,8 +93,12 @@
                     },
                     "board_outline": false,
                     "config": {
-                        "description": "Bottom Solder Mask",
-                        "file_function": "Other"
+                        "file_function": "Soldermask",
+                        "layer_type": "Bottom",
+                        "layers": [
+                            30
+                        ],
+                        "polarity": "positive"
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME.GBS",
                     "layers": [
@@ -115,8 +119,12 @@
                     },
                     "board_outline": false,
                     "config": {
-                        "description": "Top Solder Mask",
-                        "file_function": "Other"
+                        "file_function": "Soldermask",
+                        "layer_type": "top",
+                        "layers": [
+                            29
+                        ],
+                        "polarity": "positive"
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME.GTS",
                     "layers": [
@@ -137,8 +145,9 @@
                     },
                     "board_outline": false,
                     "config": {
-                        "description": "Bottom Silkscreen",
-                        "file_function": "Other"
+                        "file_function": "Legend",
+                        "index": 1,
+                        "layer_type": "Bottom"
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME.GBO",
                     "layers": [
@@ -160,8 +169,9 @@
                     },
                     "board_outline": false,
                     "config": {
-                        "description": "Top Silkscreen",
-                        "file_function": "Other"
+                        "file_function": "Legend",
+                        "index": 1,
+                        "layer_type": "top"
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME.GTO",
                     "layers": [
@@ -183,8 +193,10 @@
                     },
                     "board_outline": false,
                     "config": {
-                        "description": "Bottom Copper",
-                        "file_function": "Other"
+                        "file_function": "Copper",
+                        "layer": 2,
+                        "layer_details": "mixed",
+                        "layer_type": "Bottom"
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME.GBL",
                     "layers": [
@@ -207,8 +219,10 @@
                     },
                     "board_outline": false,
                     "config": {
-                        "description": "Top Copper",
-                        "file_function": "Other"
+                        "file_function": "Copper",
+                        "layer": 1,
+                        "layer_details": "mixed",
+                        "layer_type": "top"
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME.GTL",
                     "layers": [
@@ -297,7 +311,7 @@
             ]
         }
     ],
-    "timestamp": "2020-07-05T23:18:07",
+    "timestamp": "2020-07-08T16:55:01",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "8.6.0"

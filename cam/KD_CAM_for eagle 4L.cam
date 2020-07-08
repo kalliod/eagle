@@ -259,9 +259,10 @@
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME_drawing.dra",
                     "layers": [
-                        20,
                         46,
-                        48
+                        48,
+                        44,
+                        45
                     ],
                     "milling": true,
                     "name": "Mechanical",
@@ -373,7 +374,7 @@
             ]
         }
     ],
-    "timestamp": "2020-07-08T17:39:08",
+    "timestamp": "2020-07-08T17:46:05",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "8.6.0"

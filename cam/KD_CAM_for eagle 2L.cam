@@ -259,7 +259,6 @@
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME_drawing.dra",
                     "layers": [
-                        20,
                         46,
                         48
                     ],
@@ -321,7 +320,7 @@
             ]
         }
     ],
-    "timestamp": "2020-07-08T17:37:03",
+    "timestamp": "2020-07-08T17:50:41",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "8.6.0"

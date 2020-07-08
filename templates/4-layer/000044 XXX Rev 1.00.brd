@@ -21,7 +21,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="11" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
@@ -278,7 +278,7 @@
 <text x="168" y="108" size="2.5" layer="46" font="vector" ratio="12" align="top-left">Copper 18 um +/-10 %</text>
 <text x="164" y="108" size="2.5" layer="46" font="vector" ratio="12" align="top-right">L3: Mid</text>
 <text x="133" y="27" size="2.5" layer="15" font="vector" ratio="12" align="top-left">L3 mid-layer</text>
-<text x="133.2" y="11.9" size="2.5" layer="20" font="vector" ratio="12" align="top-left">PCB Rev: </text>
+<text x="133.2" y="11.9" size="2.5" layer="48" font="vector" ratio="12" align="top-left">PCB Rev: </text>
 <text x="133" y="27" size="2.5" layer="16" font="vector" ratio="12" align="top-left">L4 BOTTOM LAYER</text>
 <text x="133" y="27" size="2.5" layer="21" font="vector" ratio="12" align="top-left">Silkscreen top</text>
 <text x="133" y="27" size="2.5" layer="44" font="vector" ratio="12" align="top-left">Drill drawing</text>
@@ -287,18 +287,19 @@
 <text x="133.2" y="23.9" size="2.5" layer="30" font="vector" ratio="12" align="top-left">Soldermask bottom</text>
 <text x="133.2" y="23.9" size="2.5" layer="31" font="vector" ratio="12" align="top-left">Paste mask top</text>
 <text x="133.2" y="23.9" size="2.5" layer="32" font="vector" ratio="12" align="top-left">Paste mask bottom</text>
-<wire x1="131.2" y1="28.9" x2="241.2" y2="28.9" width="0.5" layer="20"/>
-<wire x1="241.2" y1="28.9" x2="241.2" y2="1.9" width="0.5" layer="20"/>
-<wire x1="241.2" y1="1.9" x2="131.2" y2="1.9" width="0.5" layer="20"/>
-<wire x1="131.2" y1="1.9" x2="131.2" y2="28.9" width="0.5" layer="20"/>
-<text x="133.2" y="6.9" size="2.5" layer="20" font="vector" ratio="12" align="top-left">&gt;OWNER</text>
-<text x="239.2" y="6.9" size="2.5" layer="20" font="vector" ratio="12" align="top-right">&gt;DATE</text>
-<text x="151.7" y="11.9" size="2.5" layer="20" font="vector" ratio="12" align="top-left">&gt;REVISION</text>
-<text x="133.2" y="16.9" size="2.5" layer="20" font="vector" ratio="12" align="top-left">PN: </text>
-<text x="140.2" y="16.9" size="2.5" layer="20" font="vector" ratio="12" align="top-left">&gt;PCB_PN</text>
+<wire x1="131.2" y1="28.9" x2="241.2" y2="28.9" width="0.5" layer="48"/>
+<wire x1="241.2" y1="28.9" x2="241.2" y2="1.9" width="0.5" layer="48"/>
+<wire x1="241.2" y1="1.9" x2="131.2" y2="1.9" width="0.5" layer="48"/>
+<wire x1="131.2" y1="1.9" x2="131.2" y2="28.9" width="0.5" layer="48"/>
+<text x="133.2" y="6.9" size="2.5" layer="48" font="vector" ratio="12" align="top-left">&gt;OWNER</text>
+<text x="239.2" y="6.9" size="2.5" layer="48" font="vector" ratio="12" align="top-right">&gt;DATE</text>
+<text x="151.7" y="11.9" size="2.5" layer="48" font="vector" ratio="12" align="top-left">&gt;REVISION</text>
+<text x="133.2" y="16.9" size="2.5" layer="48" font="vector" ratio="12" align="top-left">PN: </text>
+<text x="140.2" y="16.9" size="2.5" layer="48" font="vector" ratio="12" align="top-left">&gt;PCB_PN</text>
 <text x="133" y="27" size="2.5" layer="46" font="vector" ratio="12" align="top-left">Drill drawing</text>
 <text x="133" y="27" size="2.5" layer="1" font="vector" ratio="12" align="top-left">L1 TOP LAYER</text>
 <text x="133" y="27" size="2.5" layer="2" font="vector" ratio="12" align="top-left">L2 mid-layer</text>
+<text x="133" y="27" size="2.5" layer="20" font="vector" ratio="12" align="top-left">Board outline</text>
 </plain>
 <libraries>
 <library name="Custom_Eagle_KD">

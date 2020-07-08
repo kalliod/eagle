@@ -32,7 +32,8 @@
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME_outline.GML",
                     "layers": [
-                        20
+                        20,
+                        48
                     ],
                     "milling": true,
                     "name": "Board outline",
@@ -54,7 +55,8 @@
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME.GBP",
                     "layers": [
-                        32
+                        32,
+                        48
                     ],
                     "milling": false,
                     "name": "Bottom Paste",
@@ -76,7 +78,8 @@
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME.GTP",
                     "layers": [
-                        31
+                        31,
+                        48
                     ],
                     "milling": false,
                     "name": "Top Paste",
@@ -102,7 +105,8 @@
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME.GBS",
                     "layers": [
-                        30
+                        30,
+                        48
                     ],
                     "milling": false,
                     "name": "Bottom Solder Mask",
@@ -128,7 +132,8 @@
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME.GTS",
                     "layers": [
-                        29
+                        29,
+                        48
                     ],
                     "milling": false,
                     "name": "Top Solder Mask",
@@ -152,7 +157,8 @@
                     "filename_format": "/%N %PREFIX/%N_%NAME.GBO",
                     "layers": [
                         22,
-                        26
+                        26,
+                        48
                     ],
                     "milling": false,
                     "name": "Bottom Silkscreen",
@@ -176,7 +182,8 @@
                     "filename_format": "/%N %PREFIX/%N_%NAME.GTO",
                     "layers": [
                         21,
-                        25
+                        25,
+                        48
                     ],
                     "milling": false,
                     "name": "Top Silkscreen",
@@ -202,7 +209,8 @@
                     "layers": [
                         16,
                         17,
-                        18
+                        18,
+                        48
                     ],
                     "milling": false,
                     "name": "Bottom Copper",
@@ -228,7 +236,8 @@
                     "layers": [
                         1,
                         17,
-                        18
+                        18,
+                        48
                     ],
                     "milling": false,
                     "name": "Top Copper",
@@ -250,8 +259,9 @@
                     },
                     "filename_format": "/%N %PREFIX/%N_%NAME_drawing.dra",
                     "layers": [
+                        20,
                         46,
-                        20
+                        48
                     ],
                     "milling": true,
                     "name": "Mechanical",
@@ -311,7 +321,7 @@
             ]
         }
     ],
-    "timestamp": "2020-07-08T16:55:01",
+    "timestamp": "2020-07-08T17:37:03",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "8.6.0"

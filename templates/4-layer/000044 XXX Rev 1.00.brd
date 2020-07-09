@@ -180,8 +180,8 @@
 <wire x1="100" y1="0" x2="100" y2="80" width="0" layer="20"/>
 <wire x1="100" y1="80" x2="0" y2="80" width="0" layer="20"/>
 <wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
-<dimension x1="100" y1="80" x2="0" y2="80" x3="50" y3="95" textsize="1" textratio="12" layer="46" dtype="horizontal"/>
-<dimension x1="100" y1="0" x2="100" y2="80" x3="115" y3="40" textsize="1" textratio="12" layer="46" dtype="vertical"/>
+<dimension x1="100" y1="80" x2="0" y2="80" x3="50" y3="95" textsize="1" textratio="12" layer="47" dtype="horizontal"/>
+<dimension x1="100" y1="0" x2="100" y2="80" x3="115" y3="40" textsize="1" textratio="12" layer="47" dtype="vertical"/>
 <text x="-38" y="39" size="1" layer="21" font="vector" ratio="12">&gt;DATE</text>
 <text x="-36" y="37" size="1" layer="21" font="vector" ratio="12" align="bottom-right">&gt;REVISION</text>
 <wire x1="132" y1="228" x2="228" y2="228" width="0.5" layer="46"/>

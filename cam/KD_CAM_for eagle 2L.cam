@@ -260,7 +260,8 @@
                     "filename_format": "/%N %PREFIX/%N_%NAME_drawing.dra",
                     "layers": [
                         46,
-                        48
+                        48,
+                        47
                     ],
                     "milling": true,
                     "name": "Mechanical",
@@ -298,7 +299,7 @@
             "output_type": "assembly",
             "outputs": [
                 {
-                    "filename_format": "MFG/%N %NAME BOM",
+                    "filename_format": "MFG/%N BOM",
                     "list_attribute": true,
                     "list_type": "values",
                     "name": "Bill of Material",
@@ -306,7 +307,7 @@
                     "type": "bom"
                 },
                 {
-                    "filename_format": "MFG/%N %NAME %BOARDSIDE",
+                    "filename_format": "MFG/%N Pick and Place %BOARDSIDE",
                     "name": "Pick and Place",
                     "output_format": "txt",
                     "type": "pick_and_place"
@@ -320,7 +321,7 @@
             ]
         }
     ],
-    "timestamp": "2020-07-08T17:50:41",
+    "timestamp": "2020-07-09T14:54:13",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "8.6.0"

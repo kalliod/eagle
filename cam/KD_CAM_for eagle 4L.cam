@@ -352,7 +352,7 @@
             "output_type": "assembly",
             "outputs": [
                 {
-                    "filename_format": "MFG/%N %NAME BOM",
+                    "filename_format": "MFG/%N BOM",
                     "list_attribute": true,
                     "list_type": "values",
                     "name": "Bill of Material",
@@ -360,8 +360,8 @@
                     "type": "bom"
                 },
                 {
-                    "filename_format": "MFG/%N %NAME %BOARDSIDE",
-                    "name": "Pick and Place",
+                    "filename_format": "MFG/%N Pick and Place %BOARDSIDE",
+                    "name": "PickPlace",
                     "output_format": "txt",
                     "type": "pick_and_place"
                 }
@@ -374,7 +374,7 @@
             ]
         }
     ],
-    "timestamp": "2020-07-08T17:46:05",
+    "timestamp": "2020-07-09T13:25:20",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "8.6.0"

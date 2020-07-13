@@ -113,11 +113,11 @@ string I18N[] = {
   "<hr><b>FEHLER: Kein Schaltplan!</b><p>\nDieses Programm kann nur in einem Schaltplan verwendet"
   " werden.\v"
   ,
-  "Part\tValue\tDevice\tPackage\tDescription\v"
-  "Bauteil\tWert\tDevice\tPackage\tDescription\v"
+  "Part\tValue\tDevice\tDescription\v"
+  "Bauteil\tWert\tDevice\tDescription\v"
   ,
-  "Qty\tValue\tDevice\tPackage\tParts\v"      // 2011-04-08
-  "Menge\tWert\tDevice\tGehäuse\tBauteile\v"  // 2011-04-08
+  "Qty\tValue\tDevice\tParts\v"      // 2011-04-08
+  "Menge\tWert\tDevice\tBauteile\v"  // 2011-04-08
   ,
   "Partlist exported from %s at %s\v"
   "Stückliste exportiert aus %s am %s\v"
@@ -386,13 +386,13 @@ void GeneratePartList(void)
   string attr[], s;
 
   if (UseAttributes) s = strjoin(AttributesList, '\t');
-  Lines[NumLines ++] = tr ("Part\tValue\tDevice\tPackage\tDescription\t") + s;
+  Lines[NumLines ++] = tr ("Part\tValue\tDevice\tDescription\t") + s;
   for (int i = 0; i < NumParts; i ++)
   {
     strsplit (attr, PartAttributes[i], Separator);
     if (UseAttributes) s = strjoin(attr, '\t');
-    Lines[NumLines] = PartName[i] + "\t" + PartValue[i] + "\t" + PartDevice[i] + "\t" +
-                       PartPackage[i] + "\t" + PartHeadline[i] + "\t" + s;
+    Lines[NumLines] = PartName[i] + "\t" + PartValue[i] + "\t" + PartDevice[i] + "\t" 
+		+ "\t" + PartHeadline[i] + "\t" + s;
     NumLines ++;
   }
   Lines[NumLines] = "";
@@ -411,8 +411,8 @@ void GenerateValueList (void)
   if (UseAttributes) s = strjoin(AttributesList, '\t');
 
   // 2010-04-17 cwi: Included description.
-  Lines[NumLines ++] = tr ("Qty\tValue\tDevice\tPackage\tParts\tDescription\t") + s;                 // 2011-04-08
-  sort (NumParts, Index, PartValue, PartDevice, PartPackage, PartAttributes, PartName, PartHeadline); // 2011-11-08 Partattribute jetzt nach Package alf@cadsoft.de
+  Lines[NumLines ++] = tr ("Qty\tValue\tDevice\tParts\tDescription\t") + s;                 // 2011-04-08
+  sort (NumParts, Index, PartValue, PartDevice, PartAttributes, PartName, PartHeadline); // 2011-11-08 Partattribute jetzt nach Package alf@cadsoft.de
   for (int n1 = 0, n2 = 0; ++ n2 <= NumParts; )
   {
     int i1 = Index [n1];
@@ -428,7 +428,7 @@ void GenerateValueList (void)
     }
     string Quantity;
     sprintf (Quantity, "%d", n2 - n1);
-    Lines[NumLines] = Quantity + "\t" + PartValue[i1] + "\t" + PartDevice[i1] + "\t" + PartPackage[i1] + "\t";
+    Lines[NumLines] = Quantity + "\t" + PartValue[i1] + "\t" + PartDevice[i1] + "\t";
     for (;;)
     {
       Lines[NumLines] += PartName[i1];

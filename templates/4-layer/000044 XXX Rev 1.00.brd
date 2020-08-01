@@ -299,7 +299,6 @@
 <text x="133" y="27" size="2.5" layer="46" font="vector" ratio="12" align="top-left">Drill drawing</text>
 <text x="133" y="27" size="2.5" layer="1" font="vector" ratio="12" align="top-left">L1 TOP LAYER</text>
 <text x="133" y="27" size="2.5" layer="2" font="vector" ratio="12" align="top-left">L2 mid-layer</text>
-<text x="133" y="27" size="2.5" layer="20" font="vector" ratio="12" align="top-left">Board outline</text>
 <text x="-21.5" y="6" size="1" layer="2" font="vector" ratio="15" align="center">2</text>
 <text x="-20.5" y="6" size="1" layer="15" font="vector" ratio="15" align="center">3</text>
 </plain>

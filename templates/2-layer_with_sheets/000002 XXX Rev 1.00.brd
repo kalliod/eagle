@@ -275,7 +275,6 @@
 <text x="134" y="26" size="2.5" layer="46" font="vector" ratio="12" align="top-left">Drill drawing</text>
 <text x="101" y="210" size="2.5" layer="46" font="vector" ratio="12" align="top-left">Order form</text>
 <text x="101" y="204" size="2.5" layer="46" font="vector" ratio="12" align="top-left">Order form</text>
-<text x="134" y="26" size="2.5" layer="20" font="vector" ratio="12" align="top-left">Board outline</text>
 </plain>
 <libraries>
 <library name="Custom_Eagle_KD" urn="urn:adsk.eagle:library:21708656">

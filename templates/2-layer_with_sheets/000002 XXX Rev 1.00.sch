@@ -1890,14 +1890,14 @@ DIN A3, landscape with location and doc. field</description>
 <part name="TP1" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" deviceset="PAD_TEST_POINT" device="-2.5MM" package3d_urn="urn:adsk.eagle:package:21706159/2"/>
 <part name="TP2" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" deviceset="PAD_TEST_POINT" device="-2.5MM" package3d_urn="urn:adsk.eagle:package:21706159/2"/>
 <part name="TP3" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" deviceset="PAD_TEST_POINT" device="-2.5MM" package3d_urn="urn:adsk.eagle:package:21706159/2"/>
-<part name="FRAME1" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" deviceset="ART_FRAME_A3_SHEETS" device=""/>
-<part name="FRAME2" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" deviceset="ART_FRAME_A3_SHEETS" device=""/>
-<part name="FRAME8" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" deviceset="ART_FRAME_A3_SHEETS" device=""/>
-<part name="FRAME10" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" deviceset="ART_FRAME_A3_SHEETS" device=""/>
 <part name="ART2" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" deviceset="ART_SN_LABEL" device="-08X24" package3d_urn="urn:adsk.eagle:package:21706442/1"/>
 <part name="FRAME3" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" deviceset="ART_FRAME_A3_SHEETS" device=""/>
 <part name="FRAME4" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" deviceset="ART_FRAME_A3_SHEETS" device=""/>
 <part name="FRAME5" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" deviceset="ART_FRAME_A3_SHEETS" device=""/>
+<part name="FRAME2" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" deviceset="ART_FRAME_A3_SHEETS" device=""/>
+<part name="FRAME1" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" deviceset="ART_FRAME_A3_SHEETS" device=""/>
+<part name="FRAME6" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" deviceset="ART_FRAME_A3_SHEETS" device=""/>
+<part name="FRAME7" library="Custom_Eagle_KD" library_urn="urn:adsk.eagle:library:21708656" deviceset="ART_FRAME_A3_SHEETS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1962,6 +1962,7 @@ not fulfill safety and regulatory requirements on it's own.</text>
 <attribute name="REVISION" x="302.26" y="6.35" size="2.54" layer="94" align="center"/>
 <attribute name="OWNER" x="312.42" y="21.59" size="2.54" layer="94" align="center"/>
 <attribute name="PCBA_PN" x="359.41" y="6.35" size="2.54" layer="94" align="center"/>
+<attribute name="SHEET_HEADLINE" x="359.41" y="21.59" size="2.54" layer="94" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -1995,6 +1996,7 @@ not fulfill safety and regulatory requirements on it's own.</text>
 <attribute name="REVISION" x="302.26" y="6.35" size="2.54" layer="94" align="center"/>
 <attribute name="OWNER" x="312.42" y="21.59" size="2.54" layer="94" align="center"/>
 <attribute name="PCBA_PN" x="359.41" y="6.35" size="2.54" layer="94" align="center"/>
+<attribute name="SHEET_HEADLINE" x="359.41" y="21.59" size="2.54" layer="94" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -2165,7 +2167,11 @@ not fulfill safety and regulatory requirements on it's own.</text>
 <attribute name="CODE" x="149.86" y="142.24" size="1.778" layer="96" align="center"/>
 <attribute name="NAME" x="149.86" y="138.684" size="1.778" layer="95" align="top-center"/>
 </instance>
-<instance part="FRAME8" gate="G$1" x="0" y="0" smashed="yes">
+<instance part="ART2" gate="G$1" x="149.86" y="111.76" smashed="yes">
+<attribute name="CODE" x="149.86" y="111.76" size="1.778" layer="96" align="center"/>
+<attribute name="NAME" x="149.86" y="108.204" size="1.778" layer="95" align="top-center"/>
+</instance>
+<instance part="FRAME6" gate="G$1" x="0" y="0" smashed="yes">
 <attribute name="TITLE" x="337.82" y="29.21" size="2.54" layer="94" align="center"/>
 <attribute name="SHEET" x="299.72" y="13.97" size="2.54" layer="94" align="center"/>
 <attribute name="DATE" x="323.85" y="6.35" size="2.54" layer="94" align="center"/>
@@ -2173,10 +2179,7 @@ not fulfill safety and regulatory requirements on it's own.</text>
 <attribute name="REVISION" x="302.26" y="6.35" size="2.54" layer="94" align="center"/>
 <attribute name="OWNER" x="312.42" y="21.59" size="2.54" layer="94" align="center"/>
 <attribute name="PCBA_PN" x="359.41" y="6.35" size="2.54" layer="94" align="center"/>
-</instance>
-<instance part="ART2" gate="G$1" x="149.86" y="111.76" smashed="yes">
-<attribute name="CODE" x="149.86" y="111.76" size="1.778" layer="96" align="center"/>
-<attribute name="NAME" x="149.86" y="108.204" size="1.778" layer="95" align="top-center"/>
+<attribute name="SHEET_HEADLINE" x="359.41" y="21.59" size="2.54" layer="94" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -2213,7 +2216,7 @@ not fulfill safety and regulatory requirements on it's own.</text>
 </plain>
 <instances>
 <instance part="REVINFO1" gate="G$2" x="76.2" y="58.42" smashed="yes"/>
-<instance part="FRAME10" gate="G$1" x="0" y="0" smashed="yes">
+<instance part="FRAME7" gate="G$1" x="0" y="0" smashed="yes">
 <attribute name="TITLE" x="337.82" y="29.21" size="2.54" layer="94" align="center"/>
 <attribute name="SHEET" x="299.72" y="13.97" size="2.54" layer="94" align="center"/>
 <attribute name="DATE" x="323.85" y="6.35" size="2.54" layer="94" align="center"/>
@@ -2221,6 +2224,7 @@ not fulfill safety and regulatory requirements on it's own.</text>
 <attribute name="REVISION" x="302.26" y="6.35" size="2.54" layer="94" align="center"/>
 <attribute name="OWNER" x="312.42" y="21.59" size="2.54" layer="94" align="center"/>
 <attribute name="PCBA_PN" x="359.41" y="6.35" size="2.54" layer="94" align="center"/>
+<attribute name="SHEET_HEADLINE" x="359.41" y="21.59" size="2.54" layer="94" align="center"/>
 </instance>
 </instances>
 <busses>

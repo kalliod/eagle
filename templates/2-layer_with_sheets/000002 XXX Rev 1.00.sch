@@ -1842,13 +1842,6 @@ DIN A3, landscape with location and doc. field</description>
 <attribute name="PCB_PN" value="XXXXXX"/>
 <attribute name="REVISION" value="1.0"/>
 <attribute name="TITLE" value="Modify global attributes"/>
-<attribute name="Z_SHEET2" value="Sheet 2"/>
-<attribute name="Z_SHEET3" value="Sheet 3"/>
-<attribute name="Z_SHEET4" value="Sheet 4"/>
-<attribute name="Z_SHEET5" value="Sheet 5"/>
-<attribute name="Z_SHEET6" value="Sheet 6"/>
-<attribute name="Z_SHEET7" value="Sheet 7"/>
-<attribute name="Z_SHEET8" value="Sheet 8"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -1913,13 +1906,6 @@ DIN A3, landscape with location and doc. field</description>
 <text x="22.86" y="153.67" size="2.54" layer="97">Mechanical</text>
 <text x="22.86" y="148.59" size="2.54" layer="97">Revision History</text>
 <text x="85.09" y="120.65" size="2.54" layer="98">Place test point on the bottom side</text>
-<text x="22.86" y="189.23" size="2.54" layer="97">&gt;Z_Sheet2</text>
-<text x="22.86" y="184.15" size="2.54" layer="97">&gt;Z_Sheet3</text>
-<text x="22.86" y="179.07" size="2.54" layer="97">&gt;Z_Sheet4</text>
-<text x="22.86" y="173.99" size="2.54" layer="97">&gt;Z_Sheet5</text>
-<text x="22.86" y="168.91" size="2.54" layer="97">&gt;Z_Sheet6</text>
-<text x="22.86" y="163.83" size="2.54" layer="97">&gt;Z_Sheet7</text>
-<text x="22.86" y="158.75" size="2.54" layer="97">&gt;Z_Sheet8</text>
 <wire x1="10.16" y1="116.84" x2="10.16" y2="34.29" width="0.254" layer="97"/>
 <wire x1="10.16" y1="34.29" x2="152.4" y2="34.29" width="0.254" layer="97"/>
 <wire x1="152.4" y1="34.29" x2="283.21" y2="34.29" width="0.254" layer="97"/>

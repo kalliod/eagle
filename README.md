@@ -9,6 +9,10 @@ In Control panel -> Options -> Directories: Point scr, cam, ulp and dru librarie
 
 Make sure "Include EAGLE examples" is not checked
 
+Schematic -> Set -> Misc:
+- Uncheck "Group command default on"
+- Change Xref label format to "%F%N"
+
 ## Getting rid of standard libraries
 
 **At your own risk** 
@@ -23,7 +27,7 @@ Make sure "Include EAGLE examples" is not checked
 
 4. Delete all sub-folfers from %AppData%\Eagle\lbr
 
-5. Remove all lines starting _Lbr._ from _libraries.rc_ 
+5. Remove all lines starting "Lbr." from _libraries.rc_ 
 
 ## OpenGL batch file
 

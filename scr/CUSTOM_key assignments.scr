@@ -38,6 +38,8 @@ ASSIGN	   C+6 'Set wire_bend 1;Set width 1.00';
 ASSIGN     C+A+N 'change lay tname; text  >NAME';
 ASSIGN     C+A+V 'change lay tvalue; text  >CODE';
 ASSIGN     A+1 'GRID mm 1 dots on ALT mm 0.5;'
+ASSIGN     C+T 'display none dimension vias pads tstop top torigins tplace tnames tdocu Document tkeepout trestrict unrouted';
+ASSIGN     C+B 'display none dimension vias pads bstop bottom borigins bplace bnames bdocu Document bkeepout brestrict unrouted';
 ASSIGN     A+2 'GRID mm; GRID ALT mm; GRID 0.5; GRID on; GRID ALT 0.1; GRID dots;'
 ASSIGN     A+3 'GRID mm; GRID ALT mm; GRID 0.1; GRID on; GRID ALT 0.05; GRID dots;'
 ASSIGN     A+4 'GRID mm; GRID ALT mm; GRID 0.01; GRID off; GRID ALT FINEST;'

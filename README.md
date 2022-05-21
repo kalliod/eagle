@@ -13,6 +13,8 @@ Schematic -> Set -> Misc:
 - Uncheck "Group command default on"
 - Change Xref label format to "%F%N"
 
+Open a new schematic file to access library manager. Select Custom_*** libraries from the available tab -> click use.
+
 ## Getting rid of standard libraries
 
 **At your own risk** 
